@@ -2,7 +2,7 @@
 # Blogr Landing Page
 
 **Name:** Navita Middha  
-**Student Number:** 12345678  
+**Student Number:** 90541108122  
 **Challenge Attempted:** Blogr Landing Page from Frontend Mentor  
 
 ## Project Description
