@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogr Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Blogr</div>
+      <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>A Modern Publishing Platform</h1>
+    <p>Grow your audience and build your online brand</p>
+    <div class="hero-buttons">
+      <!-- Start for Free button: Link to sign-up page -->
+      <a href="signup.html" class="btn primary">Start for Free</a>
+      
+      <!-- Learn More button: Smooth scroll to Features section -->
+      <a href="#features" class="btn secondary">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <h2>Features</h2>
+    <p>Introducing an extensible editor, robust content management, and more.</p>
+    <div class="feature-cards">
+      <div class="card">
+        <h3>Extensible Editor</h3>
+        <p>An intuitive interface that enables you to manage your content effectively.</p>
+      </div>
+      <div class="card">
+        <h3>Robust Content Management</h3>
+        <p>Built with ease of use in mind, our tools enable easy and efficient content creation.</p>
+      </div>
+      <div class="card">
+        <h3>Secure Storage</h3>
+        <p>Store your documents securely and manage access effortlessly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing">
+    <h2>Pricing</h2>
+    <p>Choose the plan that’s right for you.</p>
+    <div class="pricing-tiers">
+      <div class="tier">
+        <h3>Basic Plan</h3>
+        <p>$9/month</p>
+      </div>
+      <div class="tier">
+        <h3>Pro Plan</h3>
+        <p>$15/month</p>
+      </div>
+      <div class="tier">
+        <h3>Enterprise Plan</h3>
+        <p>Contact Us</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Fill out the form below to reach out to us.</p>
+  
+    <form id="contactForm" onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name">
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email">
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your Message"></textarea>
+      </div>
+      
+      <button type="submit" class="btn primary">Send Message</button>
+    </form>
+
+    <p id="formStatus"></p>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Blogr. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
